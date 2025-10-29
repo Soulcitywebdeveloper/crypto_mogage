@@ -1,0 +1,22 @@
+{
+  "name": "crypto-mogage-marketplace",
+  "version": "1.0.0",
+  "description": "Marketplace for mortgaging on cryptocurrency using Hedera Hashgraph integration.",
+  "main": "service/app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node service/app.js",
+    "dev": "nodemon service/app.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@hashgraph/sdk": "^2.30.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1",
+    "cross-env": "^7.0.3"
+  }
+}
